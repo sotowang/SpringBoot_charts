@@ -2,6 +2,7 @@ package cm.soto.charts.dao;
 
 import cm.soto.charts.domain.CourseClickCount;
 import cm.soto.charts.utils.HBaseUtils;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,8 @@ import java.util.Map;
 /**
  * 实战课程访问数量 数据访问层
  */
+
+@Component
 public class CourseClickCountDAO {
 
     public List<CourseClickCount> query(String day) throws Exception {
